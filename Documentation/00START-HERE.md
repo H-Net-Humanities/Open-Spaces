@@ -204,10 +204,16 @@ public spreadsheets.
 While your dashboards are rendered live using responsive **HTML5** and
 **SVG** web components, researchers can extract completed visuals
 directly from the interface in the following publication-ready file
-formats: * **Static Images:** Export as high-resolution `.png` or `.jpg`
-for slides or digital media.  * **Print Layouts:** Generate vector-sharp
-`.pdf` documents for reference materials.  * **Scalable Vectors:**
-Download raw `.svg` files for post-processing and custom graphic edits.
+formats:
+
+* **Static Images:** Export as high-resolution `.png` or `.jpg` for
+slides or digital media.
+
+* **Print Layouts:** Generate vector-sharp `.pdf` documents for
+reference materials.
+
+* **Scalable Vectors:** Download raw `.svg` files for post-processing
+and custom graphic edits.
 
 ### 🤝 Contributing & Feedback
 
