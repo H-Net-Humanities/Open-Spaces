@@ -230,7 +230,10 @@ We welcome contributions from the Open Spaces cohort to help expand our
 open-source tools, refine data standards, and build richer research
 dashboards.
 
-### 🐛 Reporting Issues & Bugs If you encounter software bottlenecks, installation errors with Docker/DDEV, or broken API connections inside your local sandbox:
+### 🐛 Reporting Issues & Bugs
+
+If you encounter software bottlenecks, installation errors with
+Docker/DDEV, or broken API connections inside your local sandbox:
 
 * Check the existing project threads in the **STEMEd+ Commons Open
 Spaces Discussion Forum** to see if your issue has a quick fix.
@@ -239,7 +242,11 @@ Spaces Discussion Forum** to see if your issue has a quick fix.
 Issues](<https://github.com/H-Net-Humanities/Open-Spaces/issues>) page
 if you discover a reproducible platform bug.
 
-### 📋 Suggesting Additions to the Common Schema If your dataset requires specialized fields that are missing from the current global template rules that you believe other projects would benefit from:
+### 📋 Suggesting Additions to the Common Schema
+
+If your dataset requires specialized fields that are missing from the
+current global template rules that you believe other projects would
+benefit from:
 
 * Start a topic thread in our community forum detailing your specific
 research field and the variables you wish to introduce.
@@ -248,7 +255,10 @@ research field and the variables you wish to introduce.
 directly to our root `Schema/common-variable-schema.json` path using
 your **GitHub fork mechanics**.
 
-### 📊 Proposing New Core Visualizations If your data needs custom dashboard output components that are not natively supported by our default Drupal templates:
+### 📊 Proposing New Core Visualizations
+
+If your data needs custom dashboard output components that are not
+natively supported by our default Drupal templates:
 
 * Outline your specific requirements, preferred JavaScript frontend
 libraries (like D3.js or Leaflet plug-ins), and desired data formats in
