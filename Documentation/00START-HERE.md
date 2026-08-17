@@ -1,7 +1,7 @@
 # Open Spaces: Common Schema & Sandbox
 
 Welcome to the **Open Spaces** repository, maintained by [H-Net:
-Humanities and Social Sciences Online](<https://networks.h-net.org/>).
+Humanities and Social Sciences Online](https://networks.h-net.org/).
 
 This project provides a robust, standardized ecosystem for researchers.
 It establishes a **common variable schema** inside a no-code database
@@ -22,7 +22,7 @@ downloading to your own computer.
 
 * **Join the Community Group:** Connect with other researchers, share
 your progress, and stay updated on upcoming workshops.  Join the
-[STEMEd+ Commons Open Spaces Group](<https://stemedcommons.org/>).
+[STEMEd+ Commons Open Spaces Group](https://stemedplus.hcommons.org/).
 
 * **Discussion Forum & Listserv:** Our group features an integrated
 discussion forum that functions as an interactive listserv.  Use it to
@@ -66,7 +66,7 @@ Docker acts as the underlying containerization engine that isolates your
 database and CMS environments.
 
 * **Download & Install:** Follow the official guide for [Docker
-Desktop](<https://docs.docker.com/desktop/>).
+Desktop](https://docs.docker.com/desktop/).
 
 * **Verification:** Ensure Docker is running in your system tray before
 proceeding.
@@ -78,7 +78,7 @@ simplifies configuring PHP, MySQL, and Drupal environments via Docker.
 
 * **Download & Install:** Follow the platform-specific instructions on
 the [DDEV Installation
-Guide](<https://docs.ddev.com/en/stable/users/install/ddev-installation/>).
+Guide](https://docs.ddev.com/en/stable/users/install/ddev-installation/).
 
 * **Verification:** Open your terminal and run `ddev --version` to
 ensure it is configured properly.
@@ -95,8 +95,8 @@ sandbox:
 Open your terminal, navigate to your preferred development folder, and
 run:
 
-```bash
-git clone <https://github.com/H-Net-Humanities/Open-Spaces>
+```
+git clone https://github.com/H-Net-Humanities/Open-Spaces
 cd Open-Spaces
 
 ```
@@ -107,25 +107,26 @@ This repository includes pre-configured DDEV configuration files that
 automatically fetch and build containers for both Drupal and NocoDB.
 Launch the sandbox by running:
 
-```bash
+```
 ddev start
 ```
 
 *DDEV will output distinct local URLs once initialization completes
-successfully (e.g., `<http://container.ddev.site:33000>` for Drupal).*
+successfully (e.g., `http://container.ddev.site:33000/` for Drupal).*
+
 If you ever need to find the URL(s) for your installation, you can run:
 
-```bash
+```
 ddev describe
 ```
 
 Next, configure some things about your Drupal installation:
 
-```bash
+```
 ddev composer create-project drupal/recommended-project
 ddev composer require drush/drush
-ddev drush site:install minimal --account-name=admin --account-pass=admin -y
-ddev drush then -y claro
+ddev drush site:install -y minimal --account-name=admin --account-pass=admin
+ddev drush theme:enable -y claro
 ddev drush config-set system.theme default claro
 ddev launch
 
@@ -141,8 +142,8 @@ data into the pre-configured NocoDB environment.
 ### 1. Access Your NocoDB Interface
 
 * Open your browser and navigate to the NocoDB container URL specified
-by your DDEV startup output (typically
-`<http://container.ddev.site:33000>`).
+by your DDEV startup output (e.g.
+`http://container.ddev.site:33000/`).
 
 * Create a local admin account to log into the dashboard.
 
@@ -172,8 +173,8 @@ With your data structured under the common schema, Drupal can ingest it
 natively to output interactive maps, timelines, or charts.
 
 1.  **Log Into Drupal:** Navigate to your local Drupal URL (e.g.,
-`<https://ddev.site`>) and log in using the credentials provided during
-environment setup.
+`https://container.ddev.site:33000/`) and log in using the credentials
+provided during environment setup.
 
 2.  **Configure the NocoDB Views API:** Navigate to *Configuration > Web
 Services > NocoDB Connect* within your Drupal backend.  Input the
@@ -195,7 +196,7 @@ to suggest improvements to the core schema properties:
 for peer support.
 
 * Submit a formal bug or feature request via the [GitHub
-Issues](<https://github.com/H-Net-Humanities/Open-Spaces/issues>) tab.
+Issues](https://github.com/H-Net-Humanities/Open-Spaces/issues) tab.
 
 ### 📊 Visualization Component Mapping
 
@@ -246,7 +247,7 @@ Docker/DDEV, or broken API connections inside your local sandbox:
 Spaces Discussion Forum** to see if your issue has a quick fix.
 
 * Open a formal tracker ticket directly on the [GitHub
-Issues](<https://github.com/H-Net-Humanities/Open-Spaces/issues>) page
+Issues](https://github.com/H-Net-Humanities/Open-Spaces/issues) page
 if you discover a reproducible platform bug.
 
 ### 📋 Suggesting Additions to the Common Schema
@@ -273,4 +274,4 @@ the community discussion space.
 
 * File a detailed feature request on GitHub Issues outlining exactly
 which NocoDB data properties are needed to drive the requested browser
-layouts.  Displaying markdown.md.
+layouts.
