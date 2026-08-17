@@ -109,11 +109,20 @@ Launch the sandbox by running:
 
 ```bash
 ddev start
+ddev composer create-project drupal/recommended-project
+ddev composer require drush/drush
+ddev drush site:install minimal --account-name=admin --account-pass=admin -y
+ddev launch
 
 ```
 
 *DDEV will output distinct local URLs once initialization completes
 successfully (e.g., `<http://container.ddev.site:33000>` for Drupal).*
+If you need to find the URL(s) for your installation, you can run:
+
+```bash
+ddev describe
+```
 
 ---
 
