@@ -129,7 +129,6 @@ ddev drush site:install -y minimal --account-name=admin --account-pass=admin
 ddev drush theme:enable -y claro
 ddev drush config-set system.theme default claro
 ddev launch
-
 ```
 
 ---
@@ -142,8 +141,7 @@ data into the pre-configured NocoDB environment.
 ### 1. Access Your NocoDB Interface
 
 * Open your browser and navigate to the NocoDB container URL specified
-by your DDEV startup output (e.g.
-`http://container.ddev.site:33000/`).
+by your DDEV startup output (e.g.  `http://container.ddev.site:33000/`).
 
 * Create a local admin account to log into the dashboard.
 
@@ -195,7 +193,7 @@ to suggest improvements to the core schema properties:
 * Post a thread in the **STEMEd+ Commons Open Spaces Discussion Forum**
 for peer support.
 
-* Submit a formal bug or feature request via the [GitHub
+* Submit a formal bug or feature request via the [Open Spaces GitHub
 Issues](https://github.com/H-Net-Humanities/Open-Spaces/issues) tab.
 
 ### 📊 Visualization Component Mapping
@@ -246,7 +244,7 @@ Docker/DDEV, or broken API connections inside your local sandbox:
 * Check the existing project threads in the **STEMEd+ Commons Open
 Spaces Discussion Forum** to see if your issue has a quick fix.
 
-* Open a formal tracker ticket directly on the [GitHub
+* Open a formal tracker ticket directly on the [Open Spaces GitHub
 Issues](https://github.com/H-Net-Humanities/Open-Spaces/issues) page
 if you discover a reproducible platform bug.
 
